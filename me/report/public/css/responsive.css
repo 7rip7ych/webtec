@@ -1,0 +1,37 @@
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 700px) {
+    .two-col-layout {
+        flex-wrap: wrap;
+    }
+
+    .two-col-layout > .main,
+    .two-col-layout > .aside {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer .row {
+        flex-wrap: wrap;
+    }
+    .footer .row > .col3 {
+        width: 100%;
+    }
+}
+
+.img-container {
+    display: block;
+    max-width: 100%;
+    max-height: 8vw;
+    margin: 0.75rem auto;
+}
+
+.img-container img {
+    max-width: 50%;
+    max-height: inherit;
+    padding-right: 1rem;
+    display: inline-block;
+}
