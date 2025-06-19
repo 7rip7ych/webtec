@@ -1,0 +1,109 @@
+table {
+    max-width: 100%;
+    border: 1px solid #666;
+}
+
+th {
+    border-bottom: 1px solid #666;
+    background-color: #ccc;
+}
+
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+tr:hover {
+    background-color: #ccc;
+}
+
+/* calender */
+.calender-container {
+    width: 50%;
+    margin: 1rem auto;
+    font-family: Times New Roman, Times, serif;
+    background-color: white;
+    box-shadow: -2px 5px 10px gray;
+}
+
+.calender-container h2 {
+    border: 0;
+    font-weight: normal;
+    color: #666;
+    font-size: 180%;
+    font-family: inherit;
+    margin: 0;
+    padding: 8px;
+}
+
+.calender-container p {
+    width: 100%;
+    margin: 0;
+    padding: 0.1rem 2%;
+}
+
+.calender-container p a {
+    display: inline-block;
+    width: 49%;
+    color: #666;
+}
+
+.calender-container p a:last-child {
+    text-align: right;
+}
+
+
+.calender-table {
+    border: 0;
+    background-color: white;
+    color: #666;
+    border-collapse: collapse;
+}
+
+.calender-table tr {
+    background-color: white;
+}
+
+.calender-table td {
+    border-bottom: 1px solid #666;
+}
+
+
+.calender-table tr td:first-child,
+.calender-table tr td:last-child {
+    text-align: right;
+    width: 10%;
+    padding: 0 0.5rem;
+}
+
+
+.red-date {
+    color: #bd3030;
+    background-color: #ececec !important;
+}
+
+.calender-table tr td:first-child {
+    text-align: right;
+    width: 10%;
+    padding: 0.2rem 0.5rem;
+    font-size: 180%;
+}
+
+.calender-table tr td:nth-child(2) {
+    width: 27%;
+}
+
+.calender-table tr td:nth-child(3) {
+    font-size: 65%;
+    color: #666;
+    line-height: 1.8;
+    width: 10%;
+    vertical-align: top;
+}
+
+.calender-table tr td:last-child {
+    text-align: right;
+    width: 10%;
+    padding: 0 0.5rem;
+    color: #666;
+    font-size: 120%;
+}
