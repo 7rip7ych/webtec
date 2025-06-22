@@ -1,0 +1,21 @@
+.byline {
+    display: block;
+    border: 2px solid #666;
+    overflow: auto;
+    background: #dddddd;
+    clear: both;
+}
+
+.figure .byline-img {
+    max-width: 75px;
+}
+
+.first-word {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-size: 1.7em;
+}
+
+.byline-text::first-letter {
+    font-size: 1.2em;
+    font-weight: bolder;
+}

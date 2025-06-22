@@ -1,0 +1,43 @@
+.footer {
+    background: rgba(8, 5, 14, 0.5);
+    color: #FFF;
+    padding: 0 1em;
+    max-width: 100%;
+}
+
+footer a:link {
+    color: #FFF;
+}
+
+footer a:visited {
+    color: #CCC;
+}
+
+footer a:hover {
+    color: rgb(157, 112, 241);
+}
+
+/*Style content*/
+.box h4 {
+    border-bottom: 2px solid #FFF;
+}
+
+.final {
+    text-align: center;
+}
+
+/*style rows and columns*/
+.footer .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.footer .row > .col3 {
+    width: calc(100% / 3)
+}
+
+.footer .row > .col1 {
+    width: 100%;
+}
