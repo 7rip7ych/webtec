@@ -3,41 +3,6 @@
 $requestUri = $_SERVER['SCRIPT_NAME'];
 $pageController = basename($requestUri);
 
-$me_class = $about_class = $report_class = $link_class = $today_class = $assign_class = $tryout_class = $play_class = $friday_class = $month_class = "no";
-
-switch ($pageController) {
-    case 'me.php':
-        $me_class = "active";
-        break;
-    case 'about.php':
-        $about_class = "active";
-        break;
-    case 'report.php':
-        $report_class = "active";
-        break;
-    case 'links.php':
-        $link_class = "active";
-        break;
-    case 'assignments.php':
-        $assign_class = "active";
-        break;
-    case 'css-features.php':
-        $tryout_class = "active";
-        break;
-    case 'play.php':
-        $play_class = "active";
-        break;
-    case 'today.php':
-        $today_class = "active";
-        break;
-    case 'friday.php':
-        $friday_class = "active";
-        break;
-    case 'month.php':
-        $month_class = "active";
-        break;
-}
-
 ?>
 
 <!doctype html>
@@ -67,23 +32,33 @@ switch ($pageController) {
     </head>
     <body>
         <nav class="navbar">
-            <div class="navbar-inner">
+            
                 <a class="brand" href="me.php">
                     <img src="img/7rip7ych.gif" alt="7rip7ych" class="brand">
                 </a>
                 <ul class="nav">
-                    <li class=<?= $me_class?>><a href="me.php">Om mig</a></li>
-                    <li class=<?= $report_class?>><a href="report.php">Redovisning</a></li>
-                    <li class=<?= $about_class?>><a href="about.php">Om kursen</a></li>
-                    <li class=<?= $link_class?>><a href="links.php">Länkar</a></li>
-                    <li class=<?= $assign_class?>><a href="assignments.php">Uppgifter</a></li>
-                    <li class=<?= $tryout_class?>><a href="css-features.php">CSS Tryouts</a></li>
-                    <li class=<?= $play_class?>><a href="play.php">Playground</a></li>
-                    <li class=<?= $today_class?>><a href="today.php">Idag</a></li>
-                    <li class=<?= $friday_class?>><a href="friday.php">Fredag</a></li>
-                    <li class=<?= $month_class?>><a href="month.php">Kalender</a></li>
+                    <li <?= checkController("me.php", $pageController)?>><a href="me.php">Om mig</a></li>
+                    <li <?= checkController("about.php", $pageController)?>><a href="about.php">Om kursen</a></li>
+                    <li <?= checkController("links.php", $pageController)?>><a href="links.php">Länkar</a></li>
+                    <li <?= checkController("report.php", $pageController)?>><a href="report.php">Redovisning</a></li>
+
+                    <li <?= checkController("assignments.php", $pageController)?>>
+                        <div class="menu-dropdown">
+                            <a href="assignments.php">Uppgifter</a>
+                            <div class="dropdown-content">
+                                <a href="today.php" <?= checkController("today.php", $pageController)?>>Idag</a>
+                                <a href="friday.php" <?= checkController("friday.php", $pageController)?>>Fredag</a>
+                                <a href="month.php" <?= checkController("month.php", $pageController)?>>Kalender</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li <?= checkController("playgrounds.php", $pageController)?>><a href="playgrounds.php">Playgrounds</a></li>
+                    <li <?= checkController("session.php", $pageController)?>><a href="session.php">Sessionen</a></li>
+                    <li <?= checkController("photocal.php", $pageController)?>><a href="photocal.php">Almanacka</a></li>
+                    <li <?= checkController("guessname.php", $pageController)?>><a href="guessname.php">Gissningsspel</a></li>
                 </ul>
-            </div>
+            
         </nav>
         <?php if ($pageController !== 'today.php' && $pageController !== 'friday.php') : ?>
             <header class="header">

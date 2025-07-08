@@ -16,7 +16,7 @@ include('../view/header.php');
             <li>&#9746; Jobba igenom övningen <a href="https://dbwebb.se/kunskap/skapa-en-webbsida-med-html-css-och-php-v2">“Skapa en webbsida med HTML, CSS och PHP (v2)”</a>
                 som hjälper dig bygga en webbplats med HTML, CSS och PHP. Spara koden du skriver under me/kmom01.</li>
             <li>&#9746; Gör uppgiften <a href="https://dbwebb.se/uppgift/skapa-en-rapport-sida-till-webtec-kursen-v2">“Skapa en rapportsida till webtec-kursen (v2)”</a> och spara alla filer under me/report.</li>
-            <li>http://www.student.bth.se/~idal24/dbwebb-kurser/webtec/me/report</li>
+            <li><a href="me.php">Om mig</a></li>
         </ul>
         <h2>&#9746; kmom02</h2>
         <ul>
@@ -24,7 +24,7 @@ include('../view/header.php');
             som hjälper dig att komma igång med CSS konstruktioner för att styla din webbplats.
                 Spara koden du skriver under me/report, om du skriver extra test- och exempelprogram kan du spara dem under me/kmom02.</li>
             <li>&#9746; Gör uppgiften <a href="https://dbwebb.se/uppgift/styla-din-rapport-sida-till-webtec-kursen">“Styla din rapportsida till webtec-kursen”</a> och spara alla filer under me/report.</li>
-            <li>http://www.student.bth.se/~idal24/dbwebb-kurser/webtec/me/report</li>
+            <li><a href="today.php">Idag</a></li>
         </ul>
         <h2>&#9744; kmom03</h2>
         <ul>
@@ -33,16 +33,19 @@ include('../view/header.php');
                 Spara koden du skriver under me/report, om du skriver extra test- och exempelprogram kan du spara dem under me/kmom03.</li>
             <li>&#9746; Gör uppgiften <a href="https://dbwebb.se/uppgift/programmera-din-rapport-sida-till-webtec-kursen">“Programmera din rapportsida till webtec-kursen”</a>
                 och spara alla filer under me/report.</li>
-            <li>link</li>
+            <li><a href="friday.php">Fredag</a></li>
+            <li><a href="calender.php">Kalender</a></li>
         </ul>
         <h2>&#9744; kmom04</h2>
         <ul>
-            <li>&#9744; Jobba igenom övningen <a href="https://dbwebb.se/kunskap/programmera-din-webbsida-med-php-datastrukturer">“Programmera din webbsida med PHP datastrukturer”</a>
+            <li>&#9746; Jobba igenom övningen <a href="https://dbwebb.se/kunskap/programmera-din-webbsida-med-php-datastrukturer">“Programmera din webbsida med PHP datastrukturer”</a>
                 som hjälper dig att komma igång med PHP och datastrukturer som arrayer, funktioner och superglobala arrayer som POST och SESSION.
                 Spara koden du skriver under me/report, om du skriver extra test- och exempelprogram kan du spara dem under me/kmom04.</li>
             <li>&#9744; Gör uppgiften <a href="https://dbwebb.se/uppgift/bygg-en-manadskalender-och-ett-gissningsspel-med-php-datastrukturer">“Bygg en månadskalender och ett gissningsspel med PHP datastrukturer”</a>
                 och spara alla filer under me/report.</li>
-            <li>link</li>
+            <li><a href="session.php">Sessionen</a></li>
+            <li><a href="photocal.php">Almanacka</a></li>
+            <li><a href="guessname.php">Gissningsspel</a></li>
         </ul>
         <h2>&#9744; kmom05</h2>
         <ul>
