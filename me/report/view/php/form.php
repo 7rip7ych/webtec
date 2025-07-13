@@ -1,7 +1,5 @@
 <?php
 
-include('../config/config.php');
-
 $date = $_GET['date'] ?? null;
 
 $dateStr = "";

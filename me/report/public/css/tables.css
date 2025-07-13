@@ -1,6 +1,7 @@
 table {
     max-width: 100%;
     border: 1px solid #666;
+    border-collapse: collapse;
 }
 
 th {
@@ -106,4 +107,94 @@ tr:hover {
     padding: 0 0.5rem;
     color: #666;
     font-size: 120%;
+}
+
+
+/* photocal */
+.photocal-days {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    font-size: small;
+}
+
+.photocal-days tr {
+    background: transparent;
+    height: 75px;
+}
+
+.photocal-days thead tr:first-child {
+    height: 24px;
+    line-height: 1;
+}
+
+.photocal-days thead tr:nth-child(2) {
+    height: 10px;
+}
+
+.photocal-days td,
+.photocal-days th {
+    border: 1px solid #cecece;
+    background: transparent;
+    color: #444;
+    font-weight: normal;
+}
+
+.photocal-days tr td:first-child {
+    border: 0;
+}
+
+
+.photocal-days tbody td {
+    text-align: left;
+    padding: 2px 4px;
+    width: 14%;
+    word-wrap: break-word;
+    vertical-align: top;
+    position: relative;
+}
+
+
+.photocal-days tr td:first-child {
+    border: 0;
+    width: fit-content;
+    vertical-align: middle;
+}
+
+.photocal-days tbody tr td:last-child {
+    color: red;
+}
+
+.dimmed-day {
+    color: #cecece !important;
+}
+
+.photocal-days td span {
+    display: inline-block;
+    line-height: 1.1;
+    font-size: 0.6rem;
+}
+
+.photocal-days td span:first-child {
+    font-size: 1.1rem;
+    margin-top: 0;
+    vertical-align: top;
+}
+
+.photocal-days td span:nth-child(2) {
+    color: #777;
+}
+
+.photocal-days td span:nth-child(3) {
+    color: #777;
+    display: block;
+}
+
+.photocal-days td span:nth-child(4) {
+    color: #444;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    display: block;
+    text-align: right;
 }

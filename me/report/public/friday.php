@@ -52,38 +52,38 @@ include('../view/header.php');
 
 <main class="main friday-main <?= $class ?>">
     <?php if ($class === "friday") : ?>
-        <img src="img/camera.png" alt="camera">
-        <img src="img/gameboy.png" alt="gameboy">
-        <img src="img/heart.png" alt="heart">
-        <img src="img/milk.png" alt="strawberry milk">
-        <img src="img/planet.png" alt="planet">
-        <img src="img/phone.png" alt="phone">
-        <img src="img/moon.png" alt="moon">
+        <img src="img/friday/camera.png" alt="camera">
+        <img src="img/friday/gameboy.png" alt="gameboy">
+        <img src="img/friday/heart.png" alt="heart">
+        <img src="img/friday/milk.png" alt="strawberry milk">
+        <img src="img/friday/planet.png" alt="planet">
+        <img src="img/friday/phone.png" alt="phone">
+        <img src="img/friday/moon.png" alt="moon">
 
         
-        <img src="img/transparent-fairy.png" alt="fairy">
-        <img src="img/oia-uia.gif" alt="spinning cat">
-        <img src="img/pyuta.png" alt="computer">
-        <img src="img/skeleton.gif" alt="skeleton">
-        <img src="img/sparkles.gif" alt="sparkles">
-        <img src="img/sparkles.gif" alt="sparkles">
-        <img src="img/sparkles.gif" alt="sparkles">
-        <img src="img/sparkles.gif" alt="sparkles">
+        <img src="img/friday/transparent-fairy.png" alt="fairy">
+        <img src="img/friday/oia-uia.gif" alt="spinning cat">
+        <img src="img/friday/pyuta.png" alt="computer">
+        <img src="img/friday/skeleton.gif" alt="skeleton">
+        <img src="img/friday/sparkles.gif" alt="sparkles">
+        <img src="img/friday/sparkles.gif" alt="sparkles">
+        <img src="img/friday/sparkles.gif" alt="sparkles">
+        <img src="img/friday/sparkles.gif" alt="sparkles">
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Az-sDSiPd6s?si=xTQtPNC6bqKUGCGd?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         
-        <img src="img/borboletas-butterflies.gif" alt="butterflies">
+        <img src="img/friday/borboletas-butterflies.gif" alt="butterflies">
         
-        <img src="img/pink-tv.png" alt="pink tv">
-        <img src="img/bow.png" alt="bow">
+        <img src="img/friday/pink-tv.png" alt="pink tv">
+        <img src="img/friday/bow.png" alt="bow">
         <p class="impact">Det ÄR fredag.</p>
         
     <?php elseif ($dayNum == 4) : ?>
-        <img src="img/skeleton-attack.jpg" alt="skeleton attack">
+        <img src="img/friday/skeleton-attack.jpg" alt="skeleton attack">
     <?php elseif ($dayNum > 5) : ?>
-        <img src="img/wizard.jpg" alt="cat wizard">
+        <img src="img/friday/wizard.jpg" alt="cat wizard">
     <?php else : ?>
-        <img src="img/toughest-battles.jpg"  alt="Justiiin Bieber" style="border-top: 55px solid #6f6da8;">
+        <img src="img/friday/toughest-battles.jpg"  alt="Justiiin Bieber" style="border-top: 55px solid #6f6da8;">
     <?php endif; ?>
     <div class="friday-message"><?= $message ?></div>
 </main>

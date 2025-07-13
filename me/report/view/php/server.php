@@ -1,7 +1,5 @@
 <?php
 
-include('../config/config.php');
-
 // Get the loading time of the page
 $timestampFirst = $_SERVER['REQUEST_TIME_FLOAT'];
 $timestampLast = microtime(true);

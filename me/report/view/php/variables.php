@@ -1,7 +1,5 @@
 <?php
 
-include('../config/config.php');
-
 $name = "Ida";
 $city = "Södertälje";
 $age = 20;

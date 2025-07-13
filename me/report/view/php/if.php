@@ -1,8 +1,5 @@
 <?php
 
-include("../config/config.php");
-
-
 $dayNum = date('N');
 $dayStr = date('l');
 

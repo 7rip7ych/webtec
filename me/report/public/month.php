@@ -3,38 +3,32 @@ include('../config/config.php');
 
 $title = 'Kalender';
 
-$date = $_GET['date'] ?? date('Y-m-d');
-$dateStr = htmlentities($date);
-$timestamp = strtotime($date);
-$month = date('F', $timestamp);
-$year = date('Y', $timestamp);
-// $yearLength = intval(date('L', $timestamp)) + 365;
-$monthLength = date('t', $timestamp);
-$monthLength = intval($monthLength);
+$date = getDateAndTime();
+$month = getMonthDetails($date["timestamp"]);
+$year = date('Y', $date["timestamp"]);
+
 $tableContent = '';
 
-$monthStart = $timestamp - (date('j', $timestamp) - 1) * 60 * 60 * 24;
 
-for ($i = 0; $i < $monthLength; $i++) {
-    $currentTime = $monthStart + $i * 60 * 60 * 24;
-    $dayOfMonth = date('j', $currentTime);
-    $dayOfYear = date('z', $currentTime) + 1;
-    $dayOfWeek = date('N', $currentTime);
-    $dayStr = date('l', $currentTime);
-    $week = date('W', $currentTime);
+for ($i = 0; $i < $month["monthLength"]; $i++) {
+    $currentTime = $month["monthStart"] + $i * 60 * 60 * 24;
+    $tempDate = getDateDetails($currentTime);
+
+    $dayOfMonth = $tempDate["day"];
+    $dayOfYear = $tempDate["dayOfYear"];
+    $dayStr = $tempDate["dayName"];
+
     $weekContent = "";
     $rowClass = "";
-    if ($dayOfMonth == 1 || $dayOfWeek == 1) {
-        $weekContent = $week;
+    if ($tempDate["day"] == 1 || $tempDate["dayOfWeek"] == 1) {
+        $weekContent = $tempDate["week"];
     }
-    if ($dayOfWeek == 7) {
+    if ($tempDate["dayOfWeek"] == 7) {
         $rowClass = 'class="red-date"';
     }
     $tableContent .= "<tr $rowClass><td>$dayOfMonth</td><td>$dayStr</td><td>$dayOfYear</td><td></td><td>$weekContent</td></tr>";
 }
 
-$prevMonth = $timestamp - $monthLength * 60 * 60 * 24;
-$nextMonth = $timestamp + $monthLength * 60 * 60 * 24;
 
 include('../view/header.php');
 ?>
@@ -45,7 +39,7 @@ include('../view/header.php');
         <form method="get">
             <p>
                 Välj ett datum:
-                <input type="date" value="<?= $dateStr ?>" name="date">
+                <input type="date" value="<?= $date["date"] ?>" name="date">
             </p>
 
             <p>
@@ -54,13 +48,13 @@ include('../view/header.php');
             </p>
         </form>
         <div class="calender-container">
-            <h2><?= $month ?> <?= $year ?></h2>
+            <h2><?= $month["name"] ?> <?= $year ?></h2>
             <table class="table calender-table">
                 <?= $tableContent ?>
             </table>
             <p>
-                <a href="?date=<?= date('Y-m-d', $prevMonth) ?>">&lt; <?= date('F', $prevMonth) ?></a>
-                <a href="?date=<?= date('Y-m-d', $nextMonth) ?>"><?= date('F', $nextMonth) ?> &gt;</a>
+                <a href="?date=<?= date('Y-m-d', $month["prevMonth"]) ?>">&lt; <?= date('F', $month["prevMonth"]) ?></a>
+                <a href="?date=<?= date('Y-m-d', $month["nextMonth"]) ?>"><?= date('F', $month["nextMonth"]) ?> &gt;</a>
             </p>
         </div>
     </article>

@@ -15,13 +15,13 @@ include('../view/header.php');
 
         <header class="header">
             <img src="img/stay-cunty.jpg" alt="Stay cunty">
-            <img src="img/justiin.jpg" alt="Stay cunty">
-            <img src="img/justin-beiner.jpg" alt="Stay cunty">
-            <img src="img/baddies.jpg" alt="Stay cunty">
-            <img src="img/delulu.jpg" alt="Stay cunty">
-            <img src="img/horrors.jpg" alt="Stay cunty">
-            <img src="img/support.jpg" alt="Stay cunty">
-            <img src="img/dressed.jpg" alt="Stay cunty">
+            <img src="img/today/justiin.jpg" alt="Stay cunty">
+            <img src="img/today/justin-beiner.jpg" alt="Stay cunty">
+            <img src="img/today/baddies.jpg" alt="Stay cunty">
+            <img src="img/today/delulu.jpg" alt="Stay cunty">
+            <img src="img/today/horrors.jpg" alt="Stay cunty">
+            <img src="img/today/support.jpg" alt="Stay cunty">
+            <img src="img/today/dressed.jpg" alt="Stay cunty">
             <span class="title">Kursen webtec</span>
             <span class="subtitle">Min rapportsida</span>
 

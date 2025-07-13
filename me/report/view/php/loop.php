@@ -1,7 +1,5 @@
 <?php
 
-include('../config/config.php');
-
 $sum = 0;
 $number = 1;
 $oddStr = "";
