@@ -1,0 +1,73 @@
+<?php
+
+// Get the loading time of the page
+$timestampFirst = $_SERVER['REQUEST_TIME_FLOAT'];
+$timestampLast = microtime(true);
+$diff = $timestampLast - $timestampFirst;
+$loadTime = round($diff * 1000, 3);
+
+// Get loaded files
+$loadedFiles = get_included_files();
+$fileNumber = count($loadedFiles);
+
+// Get request load
+$peakMemory = memory_get_peak_usage();
+$peakMemory = round($peakMemory / 1000000, 2);
+$currentMemory = memory_get_usage();
+$currentMemory = round($currentMemory / 1000000, 2);
+$memoryLimit = ini_get("memory_limit");
+
+
+?>
+
+<footer class="footer">
+            <hr>
+            <div class="row">
+                <div class="col3 box">
+                    <h4>Validering</h4>
+                    <ul>
+                        <li><a href="http://validator.w3.org/check/referer">HTML</a></li>
+                        <li><a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a></li>
+                        <li><a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn</a></li>
+                        <li><a href="https://validator.w3.org/checklink">Link checker</a></li>
+                    </ul>
+                </div>
+
+                <div class="col3 box">
+                    <h4>Manualer</h4>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">MDN: HTML</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN: CSS</a></li>
+                        <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
+                        <li><a href="https://www.w3.org/2009/cheatsheet/">Cheat Sheet</a></li>
+                        <li><a href="https://www.php.net/manual/en/">PHP</a></li>
+                    </ul>
+                </div>
+
+                <div class="col3 box">
+                    <h4>Verktyg och tjänster</h4>
+                    <ul>
+                        <li><a href="https://web.dev/measure/">Mät prestanda</a></li>
+                        <li><a href="https://caniuse.com/">Can I Use</a></li>
+                        <li><a href="https://codepen.io/">Code pen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="col1 final">
+                    Denna sidan är Copyright &copy; av mig. <a href="https://www.stockvault.net/photo/287294/abstract-purple-background#">abstract-purple-background</a>
+                </div>
+                <div class="col1 final">
+                    Sidans laddningstid är <?= $loadTime ?> ms.
+                </div>
+                <div class="col1 final">
+                    Antalet filer som inkluderas är <?= $fileNumber ?> stycken.
+                </div>
+                <div class="col1 final">
+                    Varje request får max nyttja minne <?= $memoryLimit ?>, denna processen använder för tillfället <?= $currentMemory ?> MB och peak var <?= $peakMemory ?> MB.
+                </div>
+            </div>
+            
+        </footer>
+    </body>
+</html>
