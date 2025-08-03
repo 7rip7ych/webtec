@@ -26,7 +26,7 @@ include('../view/header.php');
             <li>&#9746; Gör uppgiften <a href="https://dbwebb.se/uppgift/styla-din-rapport-sida-till-webtec-kursen">“Styla din rapportsida till webtec-kursen”</a> och spara alla filer under me/report.</li>
             <li><a href="today.php">Idag</a></li>
         </ul>
-        <h2>&#9744; kmom03</h2>
+        <h2>&#9746; kmom03</h2>
         <ul>
             <li>&#9746; Jobba igenom övningen <a href="https://dbwebb.se/kunskap/programmera-din-webbplats-med-php">“Programmera din webbplats med PHP”</a>
                 som hjälper dig att komma igång med PHP och dess olika konstruktioner och begrepp för att införa dynamiskt beteende i dina webbsidor.
@@ -36,12 +36,12 @@ include('../view/header.php');
             <li><a href="friday.php">Fredag</a></li>
             <li><a href="calender.php">Kalender</a></li>
         </ul>
-        <h2>&#9744; kmom04</h2>
+        <h2>&#9746; kmom04</h2>
         <ul>
             <li>&#9746; Jobba igenom övningen <a href="https://dbwebb.se/kunskap/programmera-din-webbsida-med-php-datastrukturer">“Programmera din webbsida med PHP datastrukturer”</a>
                 som hjälper dig att komma igång med PHP och datastrukturer som arrayer, funktioner och superglobala arrayer som POST och SESSION.
                 Spara koden du skriver under me/report, om du skriver extra test- och exempelprogram kan du spara dem under me/kmom04.</li>
-            <li>&#9744; Gör uppgiften <a href="https://dbwebb.se/uppgift/bygg-en-manadskalender-och-ett-gissningsspel-med-php-datastrukturer">“Bygg en månadskalender och ett gissningsspel med PHP datastrukturer”</a>
+            <li>&#9746; Gör uppgiften <a href="https://dbwebb.se/uppgift/bygg-en-manadskalender-och-ett-gissningsspel-med-php-datastrukturer">“Bygg en månadskalender och ett gissningsspel med PHP datastrukturer”</a>
                 och spara alla filer under me/report.</li>
             <li><a href="session.php">Sessionen</a></li>
             <li><a href="photocal.php">Almanacka</a></li>

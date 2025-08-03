@@ -76,7 +76,7 @@ include('../view/header.php');
                         <th>Lördag</th>
                         <th>Söndag</th>
                     </tr>
-                    <tr></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
                 </thead>
                 <tbody>
                     <?= $monthContent ?>
