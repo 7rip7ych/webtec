@@ -6,156 +6,205 @@ $title = 'Redovisning';
 include('../view/header.php');
 ?>
 <div class="two-col-layout">
-    <main class="main">
+    <main class="main report-main">
         <article class="article">
             <header>
                 <h1>Redovisning</h1>
             </header>
             
-            <h2 id="kmom01">kmom01</h2>
+            <div class="kmom" id="kmom01">
+                <h2>kmom01</h2>
 
-            <ul>
-                <li>Vilken utvecklingsmiljö använder du (operativsystem, texteditor, terminal, mm)?</li>
-                <li>Gick det bra att installera labbmiljön eller var det något som krånglade?</li>
-                <li>Är du bekant med terminalen och Unix-kommandon sedan tidigare?</li>
-                <li>Är du bekant med HTML, CSS och PHP sedan tidigare eller har du jobbat med liknande tekniker?</li>
-                <li>Gick det bra att komma i gång med kursmomentet rent allmänt eller var det något som var lurigt,
-                    svårt eller utmanande?</li>
-                <li>Vad är din TIL för detta kmom?</li>
-            </ul> 
-            <p>
-                Jag använder operativsystemet Windows 11 och sedan har jag installerat WSL och använder Ubuntu terminalen.
-                Text redigeraren jag använder är VSCode. Vilken webbläsare jag använder varierar lite;
-                jag använder Firefox developers edition när jag skriver och testar kod, Opera gx eller Firefox när jag gör nåt annat
-                och google chrome som backup ifall mina tre första alternativ inte duger. Allt gick bra med labbmiljön.
-                Jag är bara bekant med ubuntu terminalen och unix-kommandon sen bth's python kurs som jag går nu.
-                Jag har jobbat en del med HTML, CSS och Javascript men det är första gången jag jobbar med PHP.
-                Det jag har lärt mig hittills är begränsat till php. Jag var lite förvirrad med php i början för vi skapade php filer
-                men skrev bara html i dem!? Men det verkar vara väldigt användbart och lättare än javascript.
-                Jag gillar speciellt att man kan återanvända delar av sidor och att det är lätt att infoga php element i html.
-                Jag är inte så förtjust i syntaxen men jag lär väl vänja mig med den. Jag har ännu inte förstått exakt varför
-                just php används men det förväntar jag mig förstå i framtiden och jag nöjer mig idag med att veta mer om php än 
-                jag gjorde igår.
-            </p>
-            <br>
+                <ul>
+                    <li>Vilken utvecklingsmiljö använder du (operativsystem, texteditor, terminal, mm)?</li>
+                    <li>Gick det bra att installera labbmiljön eller var det något som krånglade?</li>
+                    <li>Är du bekant med terminalen och Unix-kommandon sedan tidigare?</li>
+                    <li>Är du bekant med HTML, CSS och PHP sedan tidigare eller har du jobbat med liknande tekniker?</li>
+                    <li>Gick det bra att komma i gång med kursmomentet rent allmänt eller var det något som var lurigt,
+                        svårt eller utmanande?</li>
+                    <li>Vad är din TIL för detta kmom?</li>
+                </ul> 
+                <p>
+                    Jag använder operativsystemet Windows 11 och sedan har jag installerat WSL och använder Ubuntu terminalen.
+                    Text redigeraren jag använder är VSCode. Vilken webbläsare jag använder varierar lite;
+                    jag använder Firefox developers edition när jag skriver och testar kod, Opera gx eller Firefox när jag gör nåt annat
+                    och google chrome som backup ifall mina tre första alternativ inte duger. Allt gick bra med labbmiljön.
+                    Jag är bara bekant med ubuntu terminalen och unix-kommandon sen bth's python kurs som jag går nu.
+                    Jag har jobbat en del med HTML, CSS och Javascript men det är första gången jag jobbar med PHP.
+                    Det jag har lärt mig hittills är begränsat till php. Jag var lite förvirrad med php i början för vi skapade php filer
+                    men skrev bara html i dem!? Men det verkar vara väldigt användbart och lättare än javascript.
+                    Jag gillar speciellt att man kan återanvända delar av sidor och att det är lätt att infoga php element i html.
+                    Jag är inte så förtjust i syntaxen men jag lär väl vänja mig med den. Jag har ännu inte förstått exakt varför
+                    just php används men det förväntar jag mig förstå i framtiden och jag nöjer mig idag med att veta mer om php än 
+                    jag gjorde igår.
+                </p>
+            </div>
 
-            <h2 id="kmom02">kmom02</h2>
-            <ul>
-                <li>Berätta om din upplevelse att jobba med styling och CSS, hur kändes det?</li>
-                <li>Försök reflektera över vilka eventuella svårigheter som finns för en nybörjare att komma igång med CSS.</li>
-                <li>Är du nöjd med utseendet på din webbplats eller är det sakr du hade velat ändra på?</li>
-                <li>Vilken är din TIL för detta kmom?</li>
-            </ul>
-            <p>Det här är varken första eller sista gången jag jobbar med css och jag bara beskriva mina tankar om css som ett love-hate relationship. 
-                Jag älskar att ge min sida en visuellt trevlig design och det är kul att designa. Dessutom är css mer 'rewarding' än annan kod eftersom man ser
-                 ser det hela tiden man är inne på sidan. Det är mer att man skapar något och säger till datorn att visa det istället för att bara säga till datorn att göra något.
-                 Men det är ändå inte så att jag älskar att jobba med css. Det tar så mycket tid och kraft att skriva kod som ändå inte är essentiellt för programmet.
-                  Varje element behöver skrivas om hundra gånger för att få det rätt och så behöver man tänka på om konstanter ändras (som viewporten eller zoom mängden). 
-                  Så att jobba med det här elementet var tog mycket längre tid än kmom01. Det var inte heller jätte kul att min sidas utseende styrdes så mycket men jag förstår varför
-                   och det hade nog inte varit ett bra avsnitt annars. 
-                <br><br>
-                De största svårigheterna med css är att det inte finns något tydligt rätt svar. I dem andra språken jag har skrivit så finns det alltid rätt och fel svar t.ex. 
-                om jag säger åt programmet att skriva ut 2+2 så är 4 rätt svar och allt annat är fel. Om jag skriver om en div i css vad är då rätt svar på width=_? Andra 
-                svårigheter inkluderar: väldigt många funktioner, svårt att koppla kod till output vilket också ger svårigheter att felsöka och allra största hindret: att göra 
-                så att webbsidan anpassar sig efter viewport, webbläsare, zoom-inställning, osv.
-                <br>
-                För tillfället ser min hemsida hyfsad ut men det finns en del som behöver ändras och den behöver ändras så att den anpassar sig efter framförallt fönstrets storlek och enheten.
-                <br>
-                Jag lärde mig att det är väldigt kul att göra ett "crazy" utseende på webbsida. I vanliga fall behöver jag tänka och
-                 testa mig fram för att hitta ett bra utseende men att bara följa min impulser och ha en 'klottersida' var roligt.
-            </p>
-            <br>
+            <div class="kmom" id="kmom02">
+                <h2>kmom02</h2>
+                <ul>
+                    <li>Berätta om din upplevelse att jobba med styling och CSS, hur kändes det?</li>
+                    <li>Försök reflektera över vilka eventuella svårigheter som finns för en nybörjare att komma igång med CSS.</li>
+                    <li>Är du nöjd med utseendet på din webbplats eller är det sakr du hade velat ändra på?</li>
+                    <li>Vilken är din TIL för detta kmom?</li>
+                </ul>
+                <p>Det här är varken första eller sista gången jag jobbar med css och jag bara beskriva mina tankar om css som ett love-hate relationship. 
+                    Jag älskar att ge min sida en visuellt trevlig design och det är kul att designa. Dessutom är css mer 'rewarding' än annan kod eftersom man ser
+                    ser det hela tiden man är inne på sidan. Det är mer att man skapar något och säger till datorn att visa det istället för att bara säga till datorn att göra något.
+                    Men det är ändå inte så att jag älskar att jobba med css. Det tar så mycket tid och kraft att skriva kod som ändå inte är essentiellt för programmet.
+                    Varje element behöver skrivas om hundra gånger för att få det rätt och så behöver man tänka på om konstanter ändras (som viewporten eller zoom mängden). 
+                    Så att jobba med det här elementet var tog mycket längre tid än kmom01. Det var inte heller jätte kul att min sidas utseende styrdes så mycket men jag förstår varför
+                    och det hade nog inte varit ett bra avsnitt annars. 
+                    <br><br>
+                    De största svårigheterna med css är att det inte finns något tydligt rätt svar. I dem andra språken jag har skrivit så finns det alltid rätt och fel svar t.ex. 
+                    om jag säger åt programmet att skriva ut 2+2 så är 4 rätt svar och allt annat är fel. Om jag skriver om en div i css vad är då rätt svar på width=_? Andra 
+                    svårigheter inkluderar: väldigt många funktioner, svårt att koppla kod till output vilket också ger svårigheter att felsöka och allra största hindret: att göra 
+                    så att webbsidan anpassar sig efter viewport, webbläsare, zoom-inställning, osv.
+                    <br>
+                    För tillfället ser min hemsida hyfsad ut men det finns en del som behöver ändras och den behöver ändras så att den anpassar sig efter framförallt fönstrets storlek och enheten.
+                    <br>
+                    Jag lärde mig att det är väldigt kul att göra ett "crazy" utseende på webbsida. I vanliga fall behöver jag tänka och
+                    testa mig fram för att hitta ett bra utseende men att bara följa min impulser och ha en 'klottersida' var roligt.
+                </p>
+            </div>
 
-            <h2 id="kmom03">kmom03</h2>
-            <ul>
-                <li>Hur är din uppfattning om programmeringsspråket PHP så här långt?</li>
-                <li>Hur känns det att bygga webbplatsen med strukturen av sidkontroller och vyer?</li>
-                <li>Kan du säga hur bekväm du är med att använda grundkonstruktionerna i PHP med variabler, if, loopar
-                    och formulär med GET och querysträngen samt SERVER med mera, eller var ser du de svåra passagerna?</li>
-                <li>Berätta om hur du löste uppgiften och hur nöjd du är med resultatet. Berätta även om du försökte på någon av extrauppgifterna.</li>
-                <li>Vilken är din TIL för detta kmom?</li>
-            </ul>
-            <p>
-                Min uppfattning av PHP så här långt är att det i princip är javascript direkt i DOM strukturen med $ istället för var, let & const. 
-                Jag är inte särskilt förtjust i det. Även om det är smidigare att ändra sidors innehåll så föredrar jag att separera html och funktionskod i 
-                separata filer. Det är också lite svårt att kategorisera php eftersom filernas upplägg är html med enskild php-stycken, 
-                det är lite ovanligt att huvudspråket av en fil blir 'side-lined' så att säga. Det kändes okej att bygga webbplatsen. Vyerna är 
-                speciellt användbara då de minskar koden och ger en snabbare översikt i sidkontrollerna. Det är dock svårare att ändra vyerna i sidkontrollerna, 
-                man behöver antingen skriva in villkor i vyn eller inte använda den alls. Jag har testat båda sett men ingen av dem gav 
-                ett särskilt tillfredställande resultat. Jag känner mig hyfsat bekväm med grundkonstruktionerna eftersom de är stort sett samma som i javascript men 
-                jag känner mig lite osäkrare på inbyggda funktioner och variabler. Jag tyckte att php-manualen var svår att hitta i och lite otydlig 
-                (jämfört med andra manualer i alla fall) så jag känner mig inte helt bekväm i att använda de inbyggda variablerna och funktionerna ännu då jag saknar 
-                lite dokumentation. 
+            <div class="kmom" id="kmom03">
+                <h2>kmom03</h2>
+                <ul>
+                    <li>Hur är din uppfattning om programmeringsspråket PHP så här långt?</li>
+                    <li>Hur känns det att bygga webbplatsen med strukturen av sidkontroller och vyer?</li>
+                    <li>Kan du säga hur bekväm du är med att använda grundkonstruktionerna i PHP med variabler, if, loopar
+                        och formulär med GET och querysträngen samt SERVER med mera, eller var ser du de svåra passagerna?</li>
+                    <li>Berätta om hur du löste uppgiften och hur nöjd du är med resultatet. Berätta även om du försökte på någon av extrauppgifterna.</li>
+                    <li>Vilken är din TIL för detta kmom?</li>
+                </ul>
+                <p>
+                    Min uppfattning av PHP så här långt är att det i princip är javascript direkt i DOM strukturen med $ istället för var, let & const. 
+                    Jag är inte särskilt förtjust i det. Även om det är smidigare att ändra sidors innehåll så föredrar jag att separera html och funktionskod i 
+                    separata filer. Det är också lite svårt att kategorisera php eftersom filernas upplägg är html med enskild php-stycken, 
+                    det är lite ovanligt att huvudspråket av en fil blir 'side-lined' så att säga. Det kändes okej att bygga webbplatsen. Vyerna är 
+                    speciellt användbara då de minskar koden och ger en snabbare översikt i sidkontrollerna. Det är dock svårare att ändra vyerna i sidkontrollerna, 
+                    man behöver antingen skriva in villkor i vyn eller inte använda den alls. Jag har testat båda sett men ingen av dem gav 
+                    ett särskilt tillfredställande resultat. Jag känner mig hyfsat bekväm med grundkonstruktionerna eftersom de är stort sett samma som i javascript men 
+                    jag känner mig lite osäkrare på inbyggda funktioner och variabler. Jag tyckte att php-manualen var svår att hitta i och lite otydlig 
+                    (jämfört med andra manualer i alla fall) så jag känner mig inte helt bekväm i att använda de inbyggda variablerna och funktionerna ännu då jag saknar 
+                    lite dokumentation. 
 
-                För att lösa uppgiften började jag med att göra en kalender. Det gick smidigt och jag behövde knappt använda något mer än i övningen (använde främst <code>date_format</code>). 
-                Referensbilden som man skulle efterlikna var väldigt låg kvalitet så jag googlade fram en liknande kalender som jag använde som referens. En länk till den 
-                bilden finns på sidan. För <code>friday.php</code> så gick jag till väga på stort sätt som i <code>today.php</code> med den stora skillnaden att 
-                jag skrev ut om det var fredag istället för dagens datum. Jag tänkte först göra en lika gräslig sida för fredag sidkontrollern som jag gjorde i förra 
-                kursmomentet men jag ångrade mig när jag väl hade börjat på designen och bestämde mig för att göra en lika okonventionell sida som är lite lättare 
-                att titta på. Jag använde många bilder och spenderade alldeles för mycket tid på att göra bubblor och barbie-text i css istället för att använda bilder. 
-                Sidan är lite mindre galen än 'Idag'-sidan och använder inte lika många färger men den använder många andra css funktioner. Hursomhelst lade jag ner 
-                mycket tid på sidan och är hyfsat nöjd med resultatet. Jag gjorde även de två extrauppgifterna, den första gjorde jag innan jag såg att det var en uppgift. 
+                    För att lösa uppgiften började jag med att göra en kalender. Det gick smidigt och jag behövde knappt använda något mer än i övningen (använde främst <code>date_format</code>). 
+                    Referensbilden som man skulle efterlikna var väldigt låg kvalitet så jag googlade fram en liknande kalender som jag använde som referens. En länk till den 
+                    bilden finns på sidan. För <code>friday.php</code> så gick jag till väga på stort sätt som i <code>today.php</code> med den stora skillnaden att 
+                    jag skrev ut om det var fredag istället för dagens datum. Jag tänkte först göra en lika gräslig sida för fredag sidkontrollern som jag gjorde i förra 
+                    kursmomentet men jag ångrade mig när jag väl hade börjat på designen och bestämde mig för att göra en lika okonventionell sida som är lite lättare 
+                    att titta på. Jag använde många bilder och spenderade alldeles för mycket tid på att göra bubblor och barbie-text i css istället för att använda bilder. 
+                    Sidan är lite mindre galen än 'Idag'-sidan och använder inte lika många färger men den använder många andra css funktioner. Hursomhelst lade jag ner 
+                    mycket tid på sidan och är hyfsat nöjd med resultatet. Jag gjorde även de två extrauppgifterna, den första gjorde jag innan jag såg att det var en uppgift. 
 
-                TIL hur man skickar info till en sida genom url:en. Jag har tidigare använt det för API:s men jag visste inte hur man skickar parametrar till samma sida.
-            </p>
-            <br>
+                    TIL hur man skickar info till en sida genom url:en. Jag har tidigare använt det för API:s men jag visste inte hur man skickar parametrar till samma sida.
+                </p>
+            </div>
 
-            <h2 id="kmom04">kmom04</h2>
-            <ul>
-                <li>Hur kändes det att jobba med datastrukturer i arrayer?</li>
-                <li>Hur tänker du kring funktionern och hittade du mer kod som du valde att strukturera i funktioner?</li>
-                <li>Kan du se skillnaden på HTML formulär med GET och POST?</li>
-                <li>Gick det bra när du jobbade med SESSION?</li>
-                <li>Berätta om hur du löste uppgiften och hur nöjd du är med resultatet.
-                    Berätta även om du försökte på någon av extrauppgifterna.</li>
-                <li>Vilken är din TIL för detta kmom?</li>
-            </ul>
-            <p>Här kommer redovisningstexten för detta kursmoment.</p>
-            <br>
+            <div class="kmom" id="kmom04">
+                <h2>kmom04</h2>
+                <ul>
+                    <li>Hur kändes det att jobba med datastrukturer i arrayer?</li>
+                    <li>Hur tänker du kring funktionern och hittade du mer kod som du valde att strukturera i funktioner?</li>
+                    <li>Kan du se skillnaden på HTML formulär med GET och POST?</li>
+                    <li>Gick det bra när du jobbade med SESSION?</li>
+                    <li>Berätta om hur du löste uppgiften och hur nöjd du är med resultatet.
+                        Berätta även om du försökte på någon av extrauppgifterna.</li>
+                    <li>Vilken är din TIL för detta kmom?</li>
+                </ul>
+                <p>
+                    Det kändes bra att jobba med data i arrayer. Jag brukar föredra att spara data i object (Javascript) / dictionary (Python) 
+                    och php arrayer liknar dessa strukturer mer än arrays / lists för att man använder nyckel - värde par.
+                    När det kommer till funktioner så skulle jag säga att de är i princip samma som dem jag är bekant med i 
+                    javascript med ett fåtal stilistiska skillnader. Det svåraste tycker jag är att komma ihåg vart mellanrummen ska vara. 
+                    Som tur är har jag stylelint som påminner mig när jag glömmer. När det kommer till funktionerna jag skapade så skrev jag en 
+                    som stylar menyvalet för den aktiva sidan annorlunda i navbaren, sedan skapade jag tre funktioner som returnerar info om datumet. 
+                    Jag lade även till en funktion i <code>calender.php</code> som returnerar en array med datum och namn/högtider associerade med datumet. 
+                    Den funktionen var bra att ha för kalendern då det gjorde det lätt att hitta informationen för varje datum och separera namn och högtider 
+                    i utskriften. För att separera namnen och högtiderna använde jag en metod som är den bästa jag kunde komma på utefter dem två filerna 
+                    jag hade att jobba med. Om strängen i namnlistan finns i namnbetydelselistan är det ett namn, annars är det en högtid eller 'event'. 
+                    Några av namnen var inte med i betydelselistan så jag sparade dem i en separat lista så registrerar funktionen strängen som ett namn om 
+                    det är med i betydelselistan eller undantagslistan. Alternativa lösningar jag övervägde men inte valde att implementera var att kolla på 
+                    längden av strängen (högtider brukar vara längre en namn men inte som regel så jag kunde inte använda det sättet) och att lägga alla högtider 
+                    i en undantagslista. Jag valde min metod för att den skulle hålla upp bäst om man ersatte källorna (t.ex. en mer komprehensiv lista av namns 
+                    betydelser eller fler högtider namnlistan).
+                </p>
+                <p>
+                    Den största skillnaden mellan GET och POST verkar vara hur informationen skickas, GET skickar info genom querysträngen vilket 
+                    POST inte gör. Sedan brukar de två metoderna användas för olika syften; i min erfarenhet med api:er så används metoderna som namnen föreslår: 
+                    GET hämtar data och POST laddar upp data. Det är väl därför data skickas i olika delar av requesten, GET i querysträngen för det är som 
+                    sökvägen för att hitta information och POST i request bodyn för att det är själva innehållet av requesten. Det gick bra att jobba med requesten och sessionen, det liknade javascript mycket.
+                </p>
+                <p>
+                    Jag gjorde första delen av den här uppgiften på samma sätt som jag gjorde kalendern i förra kursmomentet. De två stora skillnaderna 
+                    är att jag fokuserade mer på att dela in dagarna i veckor och dela in koden i funktioner. Så för varje månad kollar programmet först 
+                    vilka veckor som är i månaden och sedan dagarna i veckorna. Jag lade även till namnsdagar och högtider (separerat) för varje dag. Jag 
+                    har redan gått in djupare på hur jag gjorde det ovan. När det kommer till gissningsspelet så måste jag erkänna att jag inte var särskilt 
+                    engagerad. Jag skrev det ganska snabbt och simpelt och lade inte ned särskilt mycket extra energi på det. Jag försökte tänka hur man kan 
+                    förbättra det men jag hade svårt att få inspiration när det i grund och botten är ett tråkigt spel som ingen kommer spela (inte ens jag). 
+                    Jag försökte ändå lägga in en hint vilket var svårt för jag visste inte hur man får php element att reagera på event (som Javascript event listener) 
+                    så jag kunde inte lägga in en knapp som kunde ge en hint. Istället fick jag lösa det med css och gjorde en hint div som visar en hint till 
+                    svaret när man drar muspekaren över diven. Kalendern blev jag nöjd med men spelet gillar jag inte. Jag menar inte att prata för negativt om 
+                    spelet, jag har bara aldrig känt mig så oinspirerad att programmera någonting förut och jag vill bara vara ärlig med mina tankar. Spelet är 
+                    inte mitt finaste arbete men fungerar som uppgiften beskriver och är inget mer än vad jag skulle kalla 'bare minimum'. Jag väljer ändå 
+                    att lämna det här och fokusera på kommande uppgifter.
+                </p>
+                <p>
+                    TIL hur man skriver funktioner i php. Jag har undrat ett tag nu hur man skriver återanvändbar php kod 
+                    och 'idag' fick jag äntligen svaret.
+                </p>
+            </div>
 
-            <h2 id="kmom05">kmom05</h2>
-            <ul>
-                <li>Var det lätt att förstå SQL eller kändes det som en helt ny teknik?</li>
-                <li>Var detta din första bekantskap med databaser och SQL,
-                    eller har du tidigare kunskaper som du kan relatera till?</li>
-                <li>Hur gick det att utföra övningen med SQLite och SQL, var det något du fastnade på?</li>
-                <li>Hur gick det med övningarna i PHP PDO och SQLite/SQL, var det något som kändes utmanade?</li>
-                <li>Berätta om hur du löste uppgiften och hur nöjd du är med resultatet.
-                    Berätta även om du försökte på någon av extrauppgifterna.</li>
-                <li>Vilken är din TIL för detta kmom?</li>
-            </ul>
-            <p>Här kommer redovisningstexten för detta kursmoment.</p>
-            <br>
+            <div class="kmom" id="kmom05">
+                <h2>kmom05</h2>
+                <ul>
+                    <li>Var det lätt att förstå SQL eller kändes det som en helt ny teknik?</li>
+                    <li>Var detta din första bekantskap med databaser och SQL,
+                        eller har du tidigare kunskaper som du kan relatera till?</li>
+                    <li>Hur gick det att utföra övningen med SQLite och SQL, var det något du fastnade på?</li>
+                    <li>Hur gick det med övningarna i PHP PDO och SQLite/SQL, var det något som kändes utmanade?</li>
+                    <li>Berätta om hur du löste uppgiften och hur nöjd du är med resultatet.
+                        Berätta även om du försökte på någon av extrauppgifterna.</li>
+                    <li>Vilken är din TIL för detta kmom?</li>
+                </ul>
+                <p>Här kommer redovisningstexten för detta kursmoment.</p>
+            </div>
 
-            <h2 id="kmom06">kmom06</h2>
-            <ul>
-                <li>Berätta hur det var att jobba med konceptet kring CRUD.</li>
-                <li>Berätta hur det var att jobba med inloggning i webbplatsen, vad tänker du om det?</li>
-                <li>Berätta om hur nöjd du är med den koden du skapat i din me/report och ser du någon förbättringspotential?</li>
-                <li>Vilken är din TIL för detta kmom?</li>
-            </ul>
-            <p>Här kommer redovisningstexten för detta kursmoment.</p>
-            <br>
+            <div class="kmom" id="kmom06">
+                <h2>kmom06</h2>
+                <ul>
+                    <li>Berätta hur det var att jobba med konceptet kring CRUD.</li>
+                    <li>Berätta hur det var att jobba med inloggning i webbplatsen, vad tänker du om det?</li>
+                    <li>Berätta om hur nöjd du är med den koden du skapat i din me/report och ser du någon förbättringspotential?</li>
+                    <li>Vilken är din TIL för detta kmom?</li>
+                </ul>
+                <p>Här kommer redovisningstexten för detta kursmoment.</p>
+            </div>
 
-            <h2 id="kmom10">kmom10</h2>
-            <ol>
-                <li>För varje krav du implementerat, dvs 1-3, 4, 5, 6, skriver du ett textstycke om
-                    ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. 
-                    Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. 
-                    Missar du att skriva/dokumentera din lösning så blir det 0 poäng.
-                    Du kan inte komplettera en inlämning för att få högre betyg.</li>
-                <li>Skriv ett allmänt stycke om hur projektet gick att genomföra. 
-                    Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. 
-                    Var projektet lätt eller svårt? Tog det lång tid? 
-                    Vad var svårt och vad gick lätt? 
-                    Var det ett bra och rimligt projekt för denna kursen?</li>
-                <li>Avsluta med ett sista stycke med dina tankar om kursen och 
-                    vad du anser om materialet och handledningen (ca 5-10 meningar). 
-                    Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. 
-                    Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? 
-                    På en skala 1-10, vilket betyg ger du kursen?</li>
-            </ol>
-            <p>Här kommer redovisningstexten för detta kursmoment.</p>
+            <div class="kmom" id="kmom10">
+                <h2>kmom10</h2>
+                <ol>
+                    <li>För varje krav du implementerat, dvs 1-3, 4, 5, 6, skriver du ett textstycke om
+                        ca 5-10 meningar där du beskriver vad du gjort och hur du tänkt. 
+                        Poängsättningen tar sin start i din text så se till att skriva väl för att undvika poängavdrag. 
+                        Missar du att skriva/dokumentera din lösning så blir det 0 poäng.
+                        Du kan inte komplettera en inlämning för att få högre betyg.</li>
+                    <li>Skriv ett allmänt stycke om hur projektet gick att genomföra. 
+                        Problem/lösningar/strul/enkelt/svårt/snabbt/lång tid, etc. 
+                        Var projektet lätt eller svårt? Tog det lång tid? 
+                        Vad var svårt och vad gick lätt? 
+                        Var det ett bra och rimligt projekt för denna kursen?</li>
+                    <li>Avsluta med ett sista stycke med dina tankar om kursen och 
+                        vad du anser om materialet och handledningen (ca 5-10 meningar). 
+                        Ge feedback till lärarna och förslå eventuella förbättringsförslag till kommande kurstillfällen. 
+                        Är du nöjd/missnöjd? Kommer du att rekommendera kursen till dina vänner/kollegor? 
+                        På en skala 1-10, vilket betyg ger du kursen?</li>
+                </ol>
+                <p>Här kommer redovisningstexten för detta kursmoment.</p>
+            </div>
+
             <?php include('../view/byline.php') ?>
         </article>
     </main>
