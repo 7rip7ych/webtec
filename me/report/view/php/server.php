@@ -13,7 +13,7 @@ $pageController = basename($requestUri);
 
 <h2>Detaljer om requesten med SERVER</h2>
 
-<table>
+<table class="table">
     <tr>
         <th>Nyckel</th>
         <th>Värde</th>
