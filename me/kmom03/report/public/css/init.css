@@ -7,21 +7,21 @@
  * to change.
  * https://www.paulirish.com/2012/box-sizing-border-box-ftw/
  */
- html {
-    box-sizing: border-box;
+
+html {
+  box-sizing: border-box;
+  line-height: 1;
+  font-size: 16px;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 /**
 * Parts from
 * https://github.com/necolas/normalize.css/blob/master/normalize.css
 */
-html {
-  line-height: 1;
-  font-size: 16px;
-}
 
 body {
   margin: 0;

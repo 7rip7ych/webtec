@@ -25,7 +25,6 @@ $pageController = basename($requestUri);
         <link rel="stylesheet" href="css/byline.css">
         <link rel="stylesheet" href="css/two-col-layout.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/tryout.css">
         <link rel="stylesheet" href="css/crazy.css">
         <link rel="stylesheet" href="css/tables.css">
         <link rel="stylesheet" href="css/fonts.css">

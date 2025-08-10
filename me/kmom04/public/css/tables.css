@@ -17,11 +17,11 @@ tr:hover {
     background-color: #ccc;
 }
 
-/* calender */
+
 .calender-container {
     width: 50%;
     margin: 1rem auto;
-    font-family: Times New Roman, Times, serif;
+    font-family: "Times New Roman", Times, serif;
     background-color: white;
     box-shadow: -2px 5px 10px gray;
 }
@@ -69,6 +69,24 @@ tr:hover {
 }
 
 
+.photocal-days td,
+.photocal-days th {
+    border: 1px solid #cecece;
+    background: transparent;
+    color: #444;
+    font-weight: normal;
+}
+
+.photocal-days tbody td {
+    text-align: left;
+    padding: 2px 4px;
+    width: 14%;
+    overflow-wrap: break-word;
+    vertical-align: top;
+    position: relative;
+}
+
+
 .calender-table tr td:first-child,
 .calender-table tr td:last-child {
     text-align: right;
@@ -110,7 +128,7 @@ tr:hover {
 }
 
 
-/* photocal */
+
 .photocal-days {
     width: 100%;
     border: 0;
@@ -131,29 +149,6 @@ tr:hover {
 .photocal-days thead tr:nth-child(2) {
     height: 10px;
 }
-
-.photocal-days td,
-.photocal-days th {
-    border: 1px solid #cecece;
-    background: transparent;
-    color: #444;
-    font-weight: normal;
-}
-
-.photocal-days tr td:first-child {
-    border: 0;
-}
-
-
-.photocal-days tbody td {
-    text-align: left;
-    padding: 2px 4px;
-    width: 14%;
-    word-wrap: break-word;
-    vertical-align: top;
-    position: relative;
-}
-
 
 .photocal-days tr td:first-child {
     border: 0;

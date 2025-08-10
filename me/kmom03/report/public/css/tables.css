@@ -20,7 +20,7 @@ tr:hover {
 .calender-container {
     width: 50%;
     margin: 1rem auto;
-    font-family: Times New Roman, Times, serif;
+    font-family: "Times New Roman", Times, serif;
     background-color: white;
     box-shadow: -2px 5px 10px gray;
 }

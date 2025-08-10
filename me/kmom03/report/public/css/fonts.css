@@ -19,22 +19,22 @@
 
 .roboto,
 .roboto h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 .unifrakturmaguntia,
 .unifrakturmaguntia h3 {
-    font-family: "UnifrakturMaguntia", cursive;
+    font-family: UnifrakturMaguntia, cursive;
 }
 
 .kablammo,
 .kablammo h3 {
-    font-family: "Kablammo", system-ui;
+    font-family: Kablammo, system-ui;
 }
 
 .doto,
 .doto h3 {
-    font-family: "Doto", system-ui;
+    font-family: Doto, system-ui;
 }
 
 .lavishly-yours,
