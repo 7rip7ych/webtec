@@ -2,7 +2,7 @@
     display: block;
     border: 2px solid #666;
     overflow: auto;
-    background: #dddddd;
+    background: #ddd;
     clear: both;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .first-word {
-    font-family: "UnifrakturMaguntia", cursive;
+    font-family: UnifrakturMaguntia, cursive;
     font-size: 1.7em;
 }
 
