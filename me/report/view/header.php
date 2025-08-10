@@ -25,10 +25,10 @@ $pageController = basename($requestUri);
         <link rel="stylesheet" href="css/byline.css">
         <link rel="stylesheet" href="css/two-col-layout.css">
         <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/tryout.css">
         <link rel="stylesheet" href="css/crazy.css">
         <link rel="stylesheet" href="css/tables.css">
         <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/forms.css">
     </head>
     <body>
         <nav class="navbar">
@@ -49,6 +49,7 @@ $pageController = basename($requestUri);
                                 <a href="today.php" <?= checkController("today.php", $pageController)?>>Idag</a>
                                 <a href="friday.php" <?= checkController("friday.php", $pageController)?>>Fredag</a>
                                 <a href="month.php" <?= checkController("month.php", $pageController)?>>Kalender</a>
+                                <a href="guessname.php" <?= checkController("guessname.php", $pageController)?>>Gissningsspel</a>
                             </div>
                         </div>
                     </li>
@@ -56,7 +57,7 @@ $pageController = basename($requestUri);
                     <li <?= checkController("playgrounds.php", $pageController)?>><a href="playgrounds.php">Playgrounds</a></li>
                     <li <?= checkController("session.php", $pageController)?>><a href="session.php">Sessionen</a></li>
                     <li <?= checkController("photocal.php", $pageController)?>><a href="photocal.php">Almanacka</a></li>
-                    <li <?= checkController("guessname.php", $pageController)?>><a href="guessname.php">Gissningsspel</a></li>
+                    <li <?= checkController("search.php", $pageController)?>><a href="search.php">Sök namn</a></li>
                 </ul>
             
         </nav>
