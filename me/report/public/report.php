@@ -169,7 +169,73 @@ include('../view/header.php');
                         Berätta även om du försökte på någon av extrauppgifterna.</li>
                     <li>Vilken är din TIL för detta kmom?</li>
                 </ul>
-                <p>Här kommer redovisningstexten för detta kursmoment.</p>
+                <p>
+                    Eftersom jag har gått databas kursen så var det här inte första gången jag skrev i sql. Däremot så var 
+                    det första gången jag använde sqlite och pdo, och första gången jag använde sql i php. Själva sql-koden 
+                    var det inget nytt med och det var bra att jag fick lite repetition så jag inte glömmer. Däremot så var 
+                    det desto svårare med PHP PDO; jag tyckte att det var ganska många steg som man behövde gå igenom. Det 
+                    är smidigt att ha databasen i en fil men att komma åt databasen tyckte jag inte verkade lika smidigt. 
+                    Först att ta fram dsn (inte särskilt komplicerat), sedan att koppla sig till databasen (tillräckligt 
+                    avancerat för att jag inte skulle komma ihåg koden i huvudet), skriva sql-koden, och sist de mest 
+                    förvirrande delarna, förbereda koden, utföra koden och hämta resultatet. Det är inte svåra koncept 
+                    men det är väldigt specifika syntaxer och steg så jag kände att om jag inte glömde ett steg så glömde 
+                    jag syntaxen. Med mer övning lär jag komma ihåg båda men såhär i början var det lite förvirrande.
+                </p>
+                <p>
+                    Båda övningarna gick bra att utföra och det enda jag fastnade på var att koppla upp sig till databasen 
+                    med PDO. Det fungerade inte först så jag behövde lägga databasfilen i hemkatalogen som övningen sade. 
+                    Jag skapade därför en funktion i <code>database.php</code> som tar fram DSN för ett filnamn/väg utefter 
+                    om det är på skolans server eller inte. Den funktionen återanvände jag i report-katalogen, vilket 
+                    fungerade tills jag laddade upp mappen på studentservern. Då ville den inte koppla upp sig till databasen. 
+                    Efter närmare undersökning insåg jag att det var för att jag inte hade angivit rätt relativ väg till databas-filen 
+                    utan behållit samma som i övningen <code>"db/db.sqlite"</code>. Så jag bytte den till <code>"../db/db.sqlite"</code> 
+                    och lade till en ltrim i <code>getDSN()</code> funktionen. Det är därför funktionen skiljer sig en aning mellan 
+                    övningen och uppgiften.
+                </p>
+                <p>
+                    För att lösa uppgiften gick jag först igenom kraven och skapade alla filer och kataloger. Jag började med 
+                    <code>name.php</code> och skrev koden som checkade querysträngen och kopplade upp programmet mot databasen. 
+                    Jag började med någon simpel sql kod som <code>SELECT * FROM namnlista;</code> eller 
+                    <code>SELECT * FROM namnlista WHERE namn LIKE ?;</code> för att se att alla php delar fungerar som de ska, t.ex. 
+                    att rätt meddelande skrivs ut om querysträngen är tom eller inte ger några matchningar. När det var klart så 
+                    kunde jag fokusera på sql-koden. Jag valde att ta information från alla tabeller med namninfo och för att 
+                    göra varje tabell oberoende av matchningar i andra tabeller gjorde jag en lite udda lösning. Bastabellen i 
+                    den select jag skrivit är bara querysträngen (genom <code>SELECT ? AS namn</code>) vilket garanterar att den 
+                    alltid ger en 'matchning' så att säga. De andra tabellerna läggs till genom left outer join och subqueries. 
+                    Här spelar det egentligen ingen roll vilken av dem två metoder man använder men jag valde att använda båda för 
+                    att visa att båda fungerar och att skilja tilltalstabellerna som kan vara beroende av andra matchningar. 
+                    Eftersom den select-sats jag skrivit alltid returnerar något (även om det bara är söksträngen) så skrev jag 
+                    en ny funktion som kontrollerar om en array är tom (inte har några värden) för att skriva ut ett meddelande 
+                    om namnet inte finns i några tabeller. Det sista jag gjorde var att formattera och styla utskriften som jag lade 
+                    i <code>view/name.php</code>.
+                </p>
+                <p>
+                    För <code>search.php</code> gick jag igenom samma process med skillnaderna att jag hade två vyer (search.php 
+                    & searchResult.php), ett med formuläret och ett med sökresultatet, resultatet beror på ett formulär och en 
+                    sökning ger flera resultat. Select satsen ser därför ganska annorlunda ut här. Koden slår samman tabellerna 
+                    namnlista, namnbetydelse, efternamn_antal, fornamn_k_antal och fornamn_m_antal till en tabell med UNION ALL 
+                    och söker i den efter namn som liknar sökfrasen (med hjälp av WHERE och %). Resultatet grupperas på namn (för 
+                    att få ett namn per rad) och sorteras på namnets längd (stigande), antal tabeller namnet finns i (fallande), 
+                    antal förnamn (fallande) och antal efternamn (fallande). Jag valde att sortera på det sättet för att först 
+                    sortera på närmsta matchning och sedan på popularitet. När det kommer till datan i varje tabell använde jag 
+                    subqueries och valde den mest intressanta datan: vilka tabeller namnet finns i, antal med förnamnet, antal med 
+                    efternamnet, namnets betydelse och självklart namnet som matchade. Jag har formaterat dessa matchningar som 
+                    googleresultat med namnet som en länk till <code>name.php</code>, tabellerna som url:en och datan som en 
+                    förhandsvisning av innehållet. Sökfältet stylade jag även lite som googles sökbar.
+                </p>
+                <p>
+                    Jag känner mig rätt så nöjd med hur uppgiften blev. Jag gillar speciellt hur jag formatterat sökningsfunktionen 
+                    för att likna google och jag tyckte jag gjorde bra val av hur jag visar upp resultatet i både <code>search.php</code> 
+                    och <code>name.php</code> även om jag inte lade så mycket tid på design. Jag tycker också att jag fick en bra struktur 
+                    på koden med relevanta funktioner och vyer. Jag är även nöjd att jag kunde få in all sql kod i två select-satser som 
+                    jag hade tänkt även om jag sökte i fler tabeller än jag hade tänkt.
+                </p>
+                <p>
+                    Min TIL är vad sqlite är och hur man kan använda det. Jag har bara använt mariadb och mysql förut så 
+                    det var intressant att använda en annan metod/språk/databasmotor. Jag är inte säker på rätta sättet att 
+                    beskriva dem på, jag ser dem lite som webbläsare: separata program med olika utseenden och struktur men 
+                    alla kör google som sökmotor.
+                </p>
             </div>
 
             <div class="kmom" id="kmom06">

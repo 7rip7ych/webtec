@@ -47,17 +47,18 @@ include('../view/header.php');
             <li><a href="photocal.php">Almanacka</a></li>
             <li><a href="guessname.php">Gissningsspel</a></li>
         </ul>
-        <h2>&#9744; kmom05</h2>
+        <h2>&#9746; kmom05</h2>
         <ul>
-            <li>&#9744; <a href="https://dbwebb.se/kunskap/kom-igang-med-sql-och-databasen-sqlite-med-terminalklienten-sqlite3">Kom igång med SQL och databasen SQLite med terminalklienten sqlite3</a>.
+            <li>&#9746; <a href="https://dbwebb.se/kunskap/kom-igang-med-sql-och-databasen-sqlite-med-terminalklienten-sqlite3">Kom igång med SQL och databasen SQLite med terminalklienten sqlite3</a>.
             I övningen får du lära dig grunderna i databasen SQLite tillsammans med terminalklienten sqlite3 och du får skriva grundläggande
             SQL-konstruktioner för att jobba mot en databas. Spara din övningskod i katalogen me/kmom05/sqlite.</li>
-            <li>&#9744; <a href="https://dbwebb.se/kunskap/kom-igang-med-php-pdo-och-databasen-sqlite">Kom igång med PHP PDO och databasen SQLite</a>
+            <li>&#9746; <a href="https://dbwebb.se/kunskap/kom-igang-med-php-pdo-och-databasen-sqlite">Kom igång med PHP PDO och databasen SQLite</a>
             visar hur PHP PDO används för att koppla sig till databasen SQLite och ställa frågor och visa upp resultatet i en webbsida.
             Spara din övningskod i katalogen me/kmom05/pdo eller jobba direkt under din me/report.</li>
-            <li>&#9744; Gör uppgiften <a href="https://dbwebb.se/uppgift/bygg-en-sokmotor-med-databasen-sqlite-och-php-pdo">“Bygg en sökmotor med databasen SQLite och PHP PDO”</a>.
+            <li>&#9746; Gör uppgiften <a href="https://dbwebb.se/uppgift/bygg-en-sokmotor-med-databasen-sqlite-och-php-pdo">“Bygg en sökmotor med databasen SQLite och PHP PDO”</a>.
                 Spara din kod i me/report.</li>
-            <li>link</li>
+            <li><a href="name.php">Namninfo</a></li>
+            <li><a href="search.php">Sök namn</a></li>
         </ul>
         <h2>&#9744; kmom06</h2>
         <ul>
