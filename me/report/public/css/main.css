@@ -32,9 +32,8 @@
 .gallery {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .gallery img {
@@ -93,4 +92,26 @@
 
 .report-main header {
     margin-bottom: -50px;
+}
+
+/* kmom05 */
+.search-match {
+    display: block;
+    margin: 2rem 0;
+}
+
+.match-source {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.match-link {
+    text-decoration-line: none;
+    display: block;
+    font-size: 1.3rem;
+    padding: 5px 0 2px;
+}
+
+.match-desc {
+    margin: 0;
 }
