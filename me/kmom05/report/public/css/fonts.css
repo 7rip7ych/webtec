@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+@font-face {
+    font-family: "Retro Dolly";
+    src: url("../../Retro_Dolly.ttf");
+}
+
+.impact,
+.impact h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.roboto,
+.roboto h3 {
+    font-family: Roboto, sans-serif;
+}
+
+.unifrakturmaguntia,
+.unifrakturmaguntia h3 {
+    font-family: UnifrakturMaguntia, cursive;
+}
+
+.kablammo,
+.kablammo h3 {
+    font-family: Kablammo, system-ui;
+}
+
+.doto,
+.doto h3 {
+    font-family: Doto, system-ui;
+}
+
+.lavishly-yours,
+.lavishly-yours h3 {
+    font-family: 'Lavishly Yours', system-ui;
+}
+
+.fascinate-inline,
+.fascinate-inline h3 {
+    font-family: 'Fascinate Inline', system-ui;
+}
+
+.rubik-glitch,
+.rubik-glitch h3 {
+    font-family: 'Rubik Glitch', system-ui;
+}
+
+
+.barbie,
+.barbie h3 {
+    font-family: 'Retro Dolly', system-ui;
+     margin-left: 10px;
+    margin-right: 10px;
+    text-shadow: -1px -1px 0 #E92990,
+        -2px -2px 0 #E92990,
+        -3px -3px 0 #E92990,
+        -4px -4px 0 #E92990,
+        -5px -5px 0 #E92990,
+        -1px 1px 0 #E92990,
+        -2px 2px 0 #E92990,
+        -3px 3px 0 #E92990,
+        -4px 4px 0 #E92990,
+        -5px 5px 0 #E92990,
+        1px -1px 0 #E92990,
+        2px -2px 0 #E92990,
+        3px -3px 0 #E92990,
+        4px -4px 0 #E92990,
+        5px -5px 0 #E92990,
+        0 -1px 0 #E92990,
+        0 -2px 0 #E92990,
+        0 -3px 0 #E92990,
+        0 -4px 0 #E92990,
+        0 -5px 0 #E92990,
+        0 1px 0 #E92990,
+        0 2px 0 #E92990,
+        0 3px 0 #E92990,
+        0 4px 0 #E92990,
+        0 5px 0 #E92990,
+        1px 0 0 #E92990,
+        2px 0 0 #E92990,
+        3px 0 0 #E92990,
+        4px 0 0 #E92990,
+        5px 0 0 #E92990,
+        -1px 0 0 #E92990,
+        -2px 0 0 #E92990,
+        -3px 0 0 #E92990,
+        -4px 0 0 #E92990,
+        -5px 0 0 #E92990,
+        1px 1px 0 #E92990,
+        2px 2px 0 #E92990,
+        3px 3px 0 #E92990,
+        4px 4px 0 #E92990,
+        5px 5px 0 #E92990,
+        6px 6px 0 #E92990,
+        7px 7px 0 #E92990,
+        8px 8px 0 #E92990,
+        9px 9px 0 #E92990,
+        10px 10px 0 #E92990,
+        11px 11px 0 #E92990,
+        12px 12px 0 #E92990,
+        13px 13px 0 #E92990,
+        14px 14px 0 #E92990,
+        15px 15px 0 #E92990
+        ;
+    color: white;
+}
+
