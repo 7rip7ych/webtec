@@ -2,37 +2,38 @@ img {
     max-width: 100%;
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
     .main {
         padding: 0.5rem 3rem;
     }
 }
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
     .two-col-layout {
         flex-wrap: wrap;
+    }
+
+    .main {
+        padding: 0.5rem;
     }
 
     .two-col-layout > .main,
     .two-col-layout > .aside {
         width: 100%;
     }
-
-    .main {
-        padding: 0.5rem;
-    }
 }
 
-@media (max-width: 650px) {
+@media (width <= 650px) {
     .footer .row {
         flex-wrap: wrap;
     }
+
     .footer .row > .col3 {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (width <= 650px) {
     .title,
     .subtitle {
         display: none;
