@@ -122,6 +122,7 @@ function getWeekDetails($timestamp): array
 
 /**
  * Check if tab is active.
+ *
  * @param string link to check.
  * @param string current page controller.
  * @return string with the css class or empty.
@@ -133,4 +134,20 @@ function checkController($controller, $currentController): string
         $res = 'class="active"';
     }
     return $res;
+}
+
+/**
+ * Check if array is empty, i.e. all values being null.
+ *
+ * @param array to check.
+ * @return bool whether the array is empty (true) or contains values (false).
+ */
+function checkArrayIsEmpty($arr): bool
+{
+    foreach ($arr as $item) {
+        if ($item) {
+            return false;
+        }
+    }
+    return true;
 }
