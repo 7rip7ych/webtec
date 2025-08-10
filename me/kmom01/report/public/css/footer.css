@@ -1,5 +1,5 @@
 .footer {
-    background: rgba(8, 5, 14, 0.5);
+    background: rgb(8 5 14 / 50%);
     color: #FFF;
     padding: 0 1em;
     max-width: 100%;
@@ -14,10 +14,10 @@ footer a:visited {
 }
 
 footer a:hover {
-    color: rgb(157, 112, 241);
+    color: rgb(157 112 241);
 }
 
-/*Style content*/
+/* Style content */
 .box h4 {
     border-bottom: 2px solid #FFF;
 }
@@ -26,7 +26,7 @@ footer a:hover {
     text-align: center;
 }
 
-/*style rows and columns*/
+/* style rows and columns */
 .footer .row {
     display: flex;
     flex-direction: row;

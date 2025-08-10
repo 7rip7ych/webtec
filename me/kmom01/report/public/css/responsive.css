@@ -2,7 +2,7 @@ img {
     max-width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (width <= 700px) {
     .two-col-layout {
         flex-wrap: wrap;
     }
@@ -13,10 +13,11 @@ img {
     }
 }
 
-@media (max-width: 650px) {
+@media (width <= 650px) {
     .footer .row {
         flex-wrap: wrap;
     }
+
     .footer .row > .col3 {
         width: 100%;
     }

@@ -50,8 +50,8 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 400;
     font-variant-caps: all-small-caps;
-    color: rgb(196, 51, 94);
-    text-shadow: 0 0 20px rgb(255, 255, 255);
+    color: rgb(196 51 94);
+    text-shadow: 0 0 20px rgb(255 255 255);
     transform: rotate(-40deg);
 }
 
@@ -66,47 +66,56 @@ p:nth-of-type(3) {
     top: 60px;
     transform: rotate(-20deg);
 }
+
 p:nth-of-type(4) {
     top: 60px;
     right: 195px;
     transform: rotate(20deg);
 }
+
 p:nth-of-type(5) {
     left: 195px;
     bottom: 60px;
     transform: rotate(-160deg);
 }
+
 p:nth-of-type(6) {
     right: 195px;
     bottom: 60px;
     transform: rotate(160deg);
 }
+
 p:nth-of-type(7) {
     width: 100%;
     text-align: center;
     top: 22px;
 }
+
 p:nth-of-type(8) {
     width: 100%;
     text-align: center;
     bottom: 22px;
     transform: rotate(180deg);
 }
+
 p:nth-of-type(9) {
     left: 20px;
     top: 198px;
     transform: rotate(-57deg);
 }
+
 p:nth-of-type(10) {
     left: 20px;
     bottom: 198px;
     transform: rotate(-123deg);
 }
+
 p:nth-of-type(11) {
     right: 20px;
     top: 198px;
     transform: rotate(57deg);
 }
+
 p:nth-of-type(12) {
     right: 20px;
     bottom: 198px;
