@@ -2,15 +2,23 @@
   "name": "course-repo-validation-tools",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "htmlhint": "npx htmlhint ./$npm_config_what -f compact|| exit 0",
+    "stylelint": "npx stylelint \"./me/**/*.css\" --aei || exit 0",
+    "stylelint:fix": "npx stylelint --fix \"./me/**/*.css\" || exit 0"
+  },
   "devDependencies": {
     "clean-css": "^4.2.1",
     "csslint": "^1.0.1",
     "html-minifier": "^4.0.0",
-    "htmlhint": "^0.11.0",
+    "htmlhint": "^1.6.3",
     "js-yaml": "^3.13.1",
-    "jscs": "^3.0.7",
+    "jscs": "^2.1.1",
     "jshint": "^2.10.2",
     "jsonlint": "^1.6.3",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-scss": "^6.12.1",
     "uglify-js": "^3.6.5"
   }
 }
